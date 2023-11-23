@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Brandon Does Yoga</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.svg" class="logo" id="logo" alt="Brandon Does Yoga"></a>
+            <div class="socials desktop">
+                <a href="mailto:brandoncleek01@gmail.com"><img src="images/socials/email.svg" alt="email"></a>
+                <a href="https://www.facebook.com/bcleek/"><img src="images/socials/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/brandoncleek/"><img src="images/socials/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCdXXpKS4ALTx27s8eepWG8A"><img src="images/socials/youtube.svg" alt="Youtube"></a>
+            </div>
+            <div class="navbar desktop">
+                    <a href="index.html">Home</a>
+                    <p>|</p>
+                    <a href="about.html">About</a>
+                    <p>|</p>
+                    <a href="whyYoga.html">Why Yoga?</a>
+                    <p>|</p>
+                    <a href="classes.html">Classes</a>
+                    <p>|</p>
+                    <a href="contact.html">Contact</a>
+                    <p>|</p>
+                    <a href="session.html">Book Session</a>                    
+            </div>
+            <img src="images/burger.svg" class="burgerBtn mobile" height="27" onclick="openSideNav()">
+        </nav>
+    </header>
+    <div class="phonenav mobile" id="mobileMenu">
+        <img src="images/close.svg" class="close" onclick="closeSideNav()" height="27">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="whyYoga.html">Why Yoga?</a>
+        <a href="classes.html">Classes</a>
+        <a href="contact.html">Contact</a>
+        <a href="session.html">Book Session</a>
+        <div class="mSocials">
+            <a href="mailto:brandoncleek01@gmail.com"><img src="images/socials/email.svg" alt="email"></a>
+            <a href="https://www.facebook.com/bcleek/"><img src="images/socials/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/brandoncleek/"><img src="images/socials/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCdXXpKS4ALTx27s8eepWG8A"><img src="images/socials/youtube.svg" alt="Youtube"></a>
+        </div>            
+    </div>
+
+    <main>
+        <div class="landing"></div>
+
+        <div class="quote">
+            <div class="title">
+                <div class="bar"></div>
+                <h2>Quote of the Day</h2>
+                <div class="bar"></div>
+            </div>
+            <div class="actualQuote">
+                <p id="quote"></p>
+                <p id="author"></p>
+            </div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="about content">
+            <img src="images/BrandonSand.png">
+            <article class="paragraph">
+                <h2 class="heading">About Me</h2>
+                <p>Hello, My name is Brandon Cleek and meditation and yoga is a journey I’ve undertaken for most of my life.</p> 
+                <p>My practice began like many others, on video (VHS to be specific!) in my living room. I was about five years old hanging out with my mom and doing the latest fad. For whatever reason, I continued it because I remember loving to come home from kindergarten and catching Wei Lana doing yoga poses on a mountaintop. Shoutout to PBS who are still running episodes 25 years later! Meditation became a staple in my practice when I began Martial Arts and learned traditional methods, which I expanded upon and created my own styles still in use by me to this day.</p>
+                <a href="about.html"><button class="signUp">Read More</button></a>
+            </article>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="CotW content">
+            <article class="paragraph">
+                <h2 class="heading">Retreats</h2>
+                <p>Stay tuned for more info on getaway retreats and clinics near you!</p>                </p>
+                <p>Check out <a href="www.authenticmovements.com">authenticmovements.com</a> for my teachers’ offerings through their school. I’ll be guest teaching at their Creative Sequencing Intensive in Marshall, NC April 24th to 28th.</p>
+            </article>
+            <img src="images/Brandon-hands.avif">
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="mail content">
+            <img src="images/BrandonStumps.jpeg" width="530">
+            <form>
+                <h2 class="heading">Want to keep up with what I am doing? Then join my mailing list!</h2>
+                <div class="box">
+                    <label>Name</label>
+                    <input type="text" name="fName" placeholder="Your Name Here" />
+                </div>
+                <div class="box">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="example@example.com" />
+                </div>
+                <button class="submitBtn" type="submit">Sign Up</button> 
+            </form>
+        </div>        
+    </main>
+    <footer>
+        <div class="nav">
+            <a href="#">Home</a>
+            <p>|</p>
+            <a href="#">About</a>
+            <p>|</p>
+            <a href="#">Why Yoga?</a>
+            <p>|</p>
+            <a href="#">Classes</a>
+            <p>|</p>
+            <a href="#">Contact</a>
+            <p>|</p>
+            <a href="#">Book Session</a> 
+        </div>
+        <p>©Brandon Cleek | 2020 - <script>document.write(new Date().getFullYear());</script></p>
+        <p>Web Design by <a href="https://www.sheldonc.ca">Sheldon Codling</a></p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/qotd.js"></script>
+</body>
+</html>

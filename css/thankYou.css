@@ -1,0 +1,38 @@
+main div {
+    padding-top: 80px;
+    height: calc(100vh - 72px - 60px);
+    width: 520px;
+    margin: 0 auto;
+}
+
+main a {
+    text-align: center;
+}
+
+#messageBox {
+    width: min-content;
+    height: min-content;
+    padding: 20px;
+    border: 1px solid #A9B4C2;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.copy {
+    width: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thanks {
+    padding-top: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+    main div {
+        padding-top: 40px;
+        height: calc(100vh - 72px - 140px);
+    }
+}

@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.mobile {
+    display: inline;
+}
+
+.desktop {
+    display: none;
+}
+
+.content {
+    margin: 75px 10px;
+}
+
+body {
+    background: #ffffff;
+    line-height: 150%;
+    font-size: 16px;
+    font-family: Arial, 'Times New Roman', Times, serif;
+}
+
+.divider {
+    margin: 20px auto;
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0), #5E6572, rgb(0, 0, 0, 0));
+    width: 95%;
+    height: 2px;
+  }
+
+.logo {
+    width: 274px;
+}
+
+.landing {
+    margin-top: 61px;
+    background-image: url("../images/test.jpg");
+    height: calc(0.4494264859228363 * 100vw);
+    background-size: cover;
+    width: 100vw;
+}
+
+.phonenav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    z-index: 1;
+    float: right;
+    transition: 0.5s;
+    background: #3C4049;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+
+.phonenav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    white-space: nowrap;
+}
+
+.phonenav .close {
+    font-size: 30px;
+    align-self: flex-end;
+    margin: 17px 10px;
+}
+
+.mSocials {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.mSocials a {
+    padding: 0;
+}
+
+.phonenav div img {
+    width: 40px;
+}
+
+header {
+    box-shadow: 0px 1px 5px #222830;
+    position: fixed;
+    width: 100%;
+    background: #FFFBFB;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.quote {
+    margin: 20px 10px;
+}
+
+.quote h2 {
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 10px; 
+}
+
+.quote .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote .bar {
+    width: 100%;
+    height: 2px;
+    background: #5E6572;
+    border-radius: 10px;
+}
+
+.quote .actualQuote {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote #quote {
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about img {
+    width: 90%;
+    max-width: 360px;
+    border: 7px solid #5E6572;
+    border-radius: 7px;
+}
+
+.paragraph {
+    max-width: 520px;
+}
+
+.about .paragraph p{
+    padding-bottom: 1em;
+}
+
+.about button {
+    float: left;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CotW {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.CotW .paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.CotW img {
+    width: 90%;
+    max-width: 400px;
+    border: 7px solid #5E6572;
+    border-radius: 7px;
+}
+
+.CotW a {
+    align-self: center;
+}
+
+.CotW p {
+    margin-bottom: 1em;
+}
+
+.CotW div {
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mail img {
+    width: 90%;
+    max-width: 500px;
+    border: 7px solid #5E6572;
+    border-radius: 7px;
+}
+
+.mail h3 {
+    max-width: 375px;
+    text-align: left;
+}
+
+.mail .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.mail label {
+    font-size: 18px;
+    padding-bottom: 10px;
+    max-width: 375px;
+}
+
+.mail .box input {
+    height: 50px;
+    padding: 10px 5px;
+}
+
+.mail form {
+    max-width: 350px;
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: none;
+    background: #5E6572;
+    color: #ffffff;
+    float: right;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1C2321;
+    color: #9f9f9f;
+    font-size: 11px;
+}
+
+footer .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 90%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #9f9f9f;
+}
+
+.heading {
+    padding: 40px 0 20px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
+    }
+
+    .content {
+        width: 960px;
+        align-self: center;
+    }
+
+    .heading {
+        padding: 0px 0 20px 0;
+    }
+
+    header {
+        position: relative;
+        padding: 10px 0;
+    }
+
+    nav {
+        max-width: 980px;
+        margin: 0 auto;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .landing {
+        margin-top: 0;
+    }
+
+    .logo {
+        width: 650px;
+    }
+
+    .navbar {
+        display: flex;
+        position: sticky;
+        justify-content: space-between;
+        align-items: center;
+        width: 980px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #0c0c0c;
+    }
+
+    .navbar a:hover {
+        color: #5E6572;
+    }
+
+    .navbar p {
+        color: #5E6572;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .socials img {
+        width: 40px;
+        height: 40px;
+        margin-left: 8px;
+        filter: brightness(0%);
+    }
+
+    .socials img:hover {
+        filter: brightness(100%);
+        cursor: pointer;
+    }
+
+    .quote {
+        display: inline-block;
+        position: absolute;
+        background: rgba(255, 251, 251, 0.6);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px #222830;
+        margin-top: 40px;
+        margin-right: 469px;
+        width: 500px;
+        align-self: center;
+    }
+    
+
+    .mail, .about, .CotW {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mail h3 {
+        max-width: 375px;
+        text-align: left;
+    }
+}

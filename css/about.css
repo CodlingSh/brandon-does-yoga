@@ -1,0 +1,41 @@
+main .heroImg {
+    max-width: 960px;
+    width: 90%;
+    border: 7px solid #5E6572;
+    border-radius: 7px;
+    margin: 80px 0;
+    align-self: center;
+}
+
+main p {
+    margin-bottom: 1.75em;
+    
+}
+
+main .mainContent {
+    align-self: center;
+    max-width: 560px;
+    padding-bottom: 75px;
+    margin: 0 10px;
+}
+
+main ul {
+    padding-left: 40px;
+}
+
+.cSocials {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cSocials img {
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+    filter: brightness(0%);
+}
+
+.cSocials img:hover {
+    filter: brightness(100%);
+}

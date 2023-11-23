@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/thankYou.css">
+    <title>Brandon Does Yoga</title>
+    <!-- jQuery Datepicker stuff -->
+    <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.min.css"/>
+    <script src="jquery.js"></script>
+    <script src="jquery.datetimepicker.full.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.svg" class="logo" id="logo" alt="Brandon Does Yoga"></a>
+            <div class="socials desktop">
+                <a href="mailto:brandoncleek01@gmail.com"><img src="images/socials/email.svg" alt="email"></a>
+                <a href="https://www.facebook.com/bcleek/"><img src="images/socials/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/brandoncleek/"><img src="images/socials/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCdXXpKS4ALTx27s8eepWG8A"><img src="images/socials/youtube.svg" alt="Youtube"></a>
+            </div>
+            <div class="navbar desktop">
+                    <a href="index.html">Home</a>
+                    <p>|</p>
+                    <a href="about.html">About</a>
+                    <p>|</p>
+                    <a href="whyYoga.html">Why Yoga?</a>
+                    <p>|</p>
+                    <a href="classes.html">Classes</a>
+                    <p>|</p>
+                    <a href="contact.html">Contact</a>
+                    <p>|</p>
+                    <a href="session.html">Book Session</a>                    
+            </div>
+            <img src="images/burger.svg" class="burgerBtn mobile" height="27" onclick="openSideNav()">
+        </nav>
+    </header>
+    <div class="phonenav mobile" id="mobileMenu">
+        <img src="images/close.svg" class="close" onclick="closeSideNav()" height="27">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="whyYoga.html">Why Yoga?</a>
+        <a href="classes.html">Classes</a>
+        <a href="contact.html">Contact</a>
+        <a href="session.html">Book Session</a>
+        <div class="mSocials">
+            <a href="mailto:brandoncleek01@gmail.com"><img src="images/socials/email.svg" alt="email"></a>
+            <a href="https://www.facebook.com/bcleek/"><img src="images/socials/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/brandoncleek/"><img src="images/socials/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCdXXpKS4ALTx27s8eepWG8A"><img src="images/socials/youtube.svg" alt="Youtube"></a>
+        </div>            
+    </div>
+
+    <main>
+        <div>
+            <h2 id="thanks">Thank you for booking a session.</h2>
+            <br>
+            <p>To complete payment, please send me a Venmo payment at brandoncleek@gmail.com with the following message and I will get back to you as soon as possible:</p>
+            <div id="messageBox"></div>
+            <button class="copy" type="button" id="copyBtn" onclick="copyText()">Click Here To Copy the Message</button> 
+        </div>
+    </main>
+
+    <footer>
+        <div class="nav">
+            <a href="#">Home</a>
+            <p>|</p>
+            <a href="#">About</a>
+            <p>|</p>
+            <a href="#">Why Yoga?</a>
+            <p>|</p>
+            <a href="#">Classes</a>
+            <p>|</p>
+            <a href="#">Contact</a>
+            <p>|</p>
+            <a href="#">Book Appointment</a> 
+        </div>
+        <p>©Brandon Cleek | 2020 - <script>document.write(new Date().getFullYear());</script></p>
+        <p>Web Design by <a href="https://www.sheldonc.ca">Sheldon Codling</a></p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/thankYou.js"></script>
+</body>
+</html>

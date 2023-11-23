@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/session.css">
+    <title>Brandon Does Yoga</title>
+    <!-- jQuery Datepicker stuff -->
+    <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.min.css"/>
+    <script src="jquery.js"></script>
+    <script src="jquery.datetimepicker.full.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.svg" class="logo" id="logo" alt="Brandon Does Yoga"></a>
+            <div class="socials desktop">
+                <a href="mailto:brandoncleek01@gmail.com"><img src="images/socials/email.svg" alt="email"></a>
+                <a href="https://www.facebook.com/bcleek/"><img src="images/socials/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/brandoncleek/"><img src="images/socials/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCdXXpKS4ALTx27s8eepWG8A"><img src="images/socials/youtube.svg" alt="Youtube"></a>
+            </div>
+            <div class="navbar desktop">
+                    <a href="index.html">Home</a>
+                    <p>|</p>
+                    <a href="about.html">About</a>
+                    <p>|</p>
+                    <a href="whyYoga.html">Why Yoga?</a>
+                    <p>|</p>
+                    <a href="classes.html">Classes</a>
+                    <p>|</p>
+                    <a href="contact.html">Contact</a>
+                    <p>|</p>
+                    <a href="session.html">Book Session</a>                    
+            </div>
+            <img src="images/burger.svg" class="burgerBtn mobile" height="27" onclick="openSideNav()">
+        </nav>
+    </header>
+    <div class="phonenav mobile" id="mobileMenu">
+        <img src="images/close.svg" class="close" onclick="closeSideNav()" height="27">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="whyYoga.html">Why Yoga?</a>
+        <a href="classes.html">Classes</a>
+        <a href="contact.html">Contact</a>
+        <a href="session.html">Book Session</a>
+        <div class="mSocials">
+            <a href="mailto:brandoncleek01@gmail.com"><img src="images/socials/email.svg" alt="email"></a>
+            <a href="https://www.facebook.com/bcleek/"><img src="images/socials/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/brandoncleek/"><img src="images/socials/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCdXXpKS4ALTx27s8eepWG8A"><img src="images/socials/youtube.svg" alt="Youtube"></a>
+        </div>            
+    </div>
+
+    <main>
+        <form action="thankYou.html" method="GET">
+            <h3 class="heading">Book Your Private Session</h3>
+
+            <div class="container2">
+                <div class="question">
+                    <label for="group1">Would You Like An Online Or In-Person Class?</label>
+                    <div class="group1" id="group1">
+                        <input type="radio" id="online" name="location" value="online"><label for="online" class="buttonLbl">Online</label>
+                        <input type="radio" id="in-person" name="location" value="in-person"><label for="in-person" class="buttonLbl">In-Person</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container3">
+                <label for="typeOfClass" class="classLabel"><p>What Type of Class Would You Like?</p></label>
+                <div class="typeOfClass">
+                    <!-- The various classes will go under here-->
+                    
+                    <input type="radio" id="class1" name="yogaClass" value="Power Flow - 60 Minutes">
+                    <label for="class1" class="theClass">
+                        <h3>Power Flow</h3>
+                        <div class="classText">
+                            <p class="classLength">60 Minutes</p>
+                            <p>$60.00</p>
+                        </div>
+                    </label>
+
+                    <input type="radio" id="class2" name="yogaClass" value="Power Flow - 75 Minutes">
+                    <label for="class2" class="theClass">
+                        <h3>Power Flow</h3>
+                        <div class="classText">
+                            <p class="classLength">75 Minutes</p>                            
+                            <p>$75.00</p>
+                        </div>
+                    </label>
+
+                    <input type="radio" id="class3" name="yogaClass" value="Restorative - 60 Minutes">
+                    <label for="class3" class="theClass">
+                        <h3>Restorative</h3>
+                        <div class="classText">
+                            <p class="classLength">60 Minutes</p> 
+                            <p>$60.00</p>                           
+                        </div>
+                    </label>                    
+                </div>
+            </div>
+
+            <p class="dateText">Please pick a preferred date and time and then provide 2 back up date and times.</p>
+
+            <div class="dateTime">
+                <div class="row">
+                    <label for="pDate">Preferred Date: </label>
+                    <input class="datetimepicker" type="text" name=pDate>
+                </div>
+                <br>
+                <div class="row">
+                    <label for="1bDate">1st Backup Date: </label>
+                    <input class="datetimepicker" type="text" name=1bDate>
+                </div>
+                <br>
+                <div class="row">
+                    <label for="2bDate">2nd Backup Date: </label>
+                    <input class="datetimepicker" type="text" name=2bDate>
+                </div>
+            </div>
+
+            <p class="dateText">Please provide contact information.</p>
+
+            <div class="container1">
+                <div class="box">
+                    <label for="fName">Name: </label>
+                    <input type="text" name="Name" placeholder="Your Name Here" />
+                </div>
+                <div class="box">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" placeholder="example@example.com" />
+                </div>
+            </div>
+
+            <div class="yourTotal">
+                <h2 id="title">Your total is:</h2>
+                <h2 id="total">$0.00</h2>
+                <br>
+                <button type="submit" class="actBtn">Continue</button>
+            </div>
+
+        </form>
+        
+    </main>
+
+    <footer>
+        <div class="nav">
+            <a href="#">Home</a>
+            <p>|</p>
+            <a href="#">About</a>
+            <p>|</p>
+            <a href="#">Why Yoga?</a>
+            <p>|</p>
+            <a href="#">Classes</a>
+            <p>|</p>
+            <a href="#">Contact</a>
+            <p>|</p>
+            <a href="#">Book Appointment</a> 
+        </div>
+        <p>©Brandon Cleek | 2020 - <script>document.write(new Date().getFullYear());</script></p>
+        <p>Web Design by <a href="https://www.sheldonc.ca">Sheldon Codling</a></p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/session.js"></script>
+    <script>$('.datetimepicker').datetimepicker();</script>
+</body>
+
+</html>

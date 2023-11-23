@@ -1,0 +1,44 @@
+main {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main .heading {
+    margin-bottom: 30px;
+}
+
+.bold {
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.dayOfWeek {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #A9B4C2;
+    padding: 5px 0;
+}
+
+.aClass {
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+
+.aClass:last-child {
+    margin-bottom: 80px;
+}
+
+.lClass {
+    border-bottom: none;
+}
+
+.aClass div {
+    display: flex;
+}
+
+.aClass p {
+    margin: 5px 0;
+}
+
